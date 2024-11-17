@@ -1,0 +1,20 @@
+name: Authelia
+tags:
+    - 工具
+title: 一个提供双因素认证和单点登录（SSO）的应用程序的开源身份验证和授权服务器
+type: 工具
+description: 一个提供双因素认证和单点登录（SSO）的应用程序的开源身份验证和授权服务器
+additionalProperties:
+    key: authelia
+    name: Authelia
+    tags:
+        - Tool
+    shortDescZh: 一个提供双因素认证和单点登录（SSO）的应用程序的开源身份验证和授权服务器
+    shortDescEn: an open-source authentication and authorization server providing two-factor authentication and single sign-on (SSO)
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://www.authelia.com/
+    github: https://github.com/authelia/authelia/
+    document: https://www.authelia.com/

@@ -1,0 +1,38 @@
+additionalProperties:
+  formFields:
+    - default: 9091
+      edit: true
+      envKey: PANEL_APP_PORT_HTTP
+      labelEn: Port
+      labelZh: 端口
+      required: true
+      rule: paramPort
+      type: number
+    - default: a_random_string_with_20_or_more_chars
+      envKey: PANEL_STORAGE_ENCRYPTION_KEY
+      labelEn: Storage encryption key
+      labelZh: 存储加密密钥
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: a_random_alphanumeric_string_with_64_or_more_chars
+      envKey: PANEL_SESSION_SECRET
+      labelEn: Session password
+      labelZh: 会话加密密钥
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: "a_random_alphanumeric_string_with_64_or_more_chars"
+      envKey: PANEL_RESET_PWD_SECRET
+      labelEn: Reset password secret
+      labelZh: 重置密码加密密钥
+      required: true
+      rule: paramComplexity
+      type: password
+    - default: Asia/Shanghai
+      edit: true
+      envKey: TIME_ZONE
+      labelEn: Time zone
+      labelZh: 时区
+      required: true
+      type: text

@@ -1,0 +1,51 @@
+server:
+  address: "tcp://:9091"
+
+authentication_backend:
+  file:
+    path: "/config/users_database.yml"
+
+totp:
+  disable: false
+  issuer: "authelia.com"
+
+identity_validation:
+  reset_password:
+    jwt_algorithm: "HS512"
+
+session:
+  cookies:
+    - name: "authelia_session"
+      domain: "example.com"
+      authelia_url: "https://authelia.example.com"
+      expiration: "1 hour"
+      inactivity: "5 minutes"
+      remember_me: "1 week"
+
+access_control:
+  default_policy: "deny"
+  rules:
+    - domain: "public.example.com"
+      policy: "bypass"
+    - domain: "private.example.com"
+      policy: "one_factor"
+    - domain: "secure.example.com"
+      policy: "two_factor"
+
+regulation:
+  max_retries: 3
+  find_time: "2 minutes"
+  ban_time: "5 minutes"
+
+storage:
+  local:
+    path: "/config/db.sqlite3"
+
+notifier:
+  filesystem:
+    filename: "/config/notification.txt"
+  # smtp:
+  #   username: 'test'
+  #   password: 'password'
+  #   address: 'smtp://mail.example.com:25'
+  #   sender: 'admin@example.com'
