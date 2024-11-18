@@ -9,8 +9,8 @@
 下载源码到本地后将需要的应用上传到服务器的 `/opt/1panel/resource/apps/local` 目录（默认安装目录）下，或直接在服务器上使用下面的代码：
 
 ```sh
-git clone https://github.com/HPCesia/1pnel-apps /opt/1panel/resource/apps/local/1pnel-apps
-# git clone https://gitea.hpcesia.com/HPCesia/1pnel-apps /opt/1panel/resource/apps/local/1pnel-apps # 自建 Gitea，中国大陆地区可用，不稳定
-cp -rf /opt/1panel/resource/apps/local/1pnel-apps/apps/* /opt/1panel/resource/apps/local/
-rm -rf /opt/1panel/resource/apps/local/1pnel-apps
+git clone https://github.com/HPCesia/1panel-apps /opt/1panel/resource/apps/local/1panel-apps
+# git clone https://gitea.hpcesia.com/HPCesia/1panel-apps /opt/1panel/resource/apps/local/1panel-apps # 自建 Gitea，中国大陆地区可用，不稳定
+cp -rf /opt/1panel/resource/apps/local/1panel-apps/apps/* /opt/1panel/resource/apps/local/
+rm -rf /opt/1panel/resource/apps/local/1panel-apps
 ```
