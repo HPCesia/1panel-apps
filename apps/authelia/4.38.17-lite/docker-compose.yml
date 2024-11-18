@@ -14,7 +14,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - X_AUTHELIA_CONFIG_FILTERS=expand-env,template
+      - X_AUTHELIA_CONFIG_FILTERS=template
       - TZ=${TIME_ZONE}
       - AUTHELIA_STORAGE_ENCRYPTION_KEY_FILE=/config/secrets/STORAGE_ENCRYPTION
       - AUTHELIA_SESSION_SECRET_FILE=/config/secrets/SESSION_SECRET
