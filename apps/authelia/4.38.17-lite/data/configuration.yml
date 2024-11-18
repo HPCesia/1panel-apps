@@ -13,6 +13,14 @@ identity_validation:
   reset_password:
     jwt_algorithm: "HS512"
 
+identity_providers:
+  oidc:
+    jwks:
+      - key_id: "example"
+        algorithm: "RS256"
+        use: "sig"
+        key: {{ secret "/config/secrets/oidc/jwks/rsa.2048.key" | mindent 10 "|" | msquote }}
+
 session:
   cookies:
     - name: "authelia_session"
