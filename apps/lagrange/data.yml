@@ -1,0 +1,19 @@
+name: Lagrange
+tags:
+    - 实用工具
+title: 一个基于纯 C# 的 NTQQ 协议实现
+description: 一个基于纯 C# 的 NTQQ 协议实现
+additionalProperties:
+    key: lagrange
+    name: Lagrange
+    tags:
+        - Tool
+    shortDescZh: 一个基于纯 C# 的 NTQQ 协议实现
+    shortDescEn: An Implementation of NTQQ Protocol, with Pure C#
+    type: tool
+    crossVersionUpdate: true
+    limit: 0
+    recommend: 0
+    website: https://github.com/LagrangeDev/Lagrange.Core
+    github: https://github.com/LagrangeDev/Lagrange.Core
+    document: https://lagrangedev.github.io/Lagrange.Doc/

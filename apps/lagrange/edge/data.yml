@@ -1,0 +1,17 @@
+additionalProperties:  #固定参数
+    formFields:
+        - default: 8081
+          edit: true
+          envKey: PANEL_APP_PORT_HTTP
+          labelEn: Port
+          labelZh: 正向WebSocket端口
+          required: true
+          rule: paramPort
+          type: number
+        - default: Asia/Shanghai
+          edit: true
+          envKey: TIME_ZONE
+          labelEn: Time zone
+          labelZh: 时区
+          required: true
+          type: text
